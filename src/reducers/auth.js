@@ -6,11 +6,11 @@ let initialState = {
 
 export default function auth(state = initialState, action) {
   switch(action) {
-    case 'ABC':
+    case 'DEMO':
       return {
         ...state,
         auth: {
-          token: '987654321'
+          token: action.payload
         }
       }
 
